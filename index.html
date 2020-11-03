@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
+    <link rel = "stylesheet" href="style.css"/>
+    <link href="font-awesome/css/all.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Boogaloo&family=Playfair+Display:wght@600&family=Sigmar+One&family=Slabo+27px&display=swap" rel="stylesheet">
 </head>
 <body>
-        <table cellspacing="20">
+    <div class="sidebar" style="width:22%">
+        <div>
             <tr>
-                <td><img src="circle-cropped.png"   height="230px" alt="profil-picture"></td>
                         <td>
-                        <h1>Ferren Hillary Kalalo</h1>
+                        <h2>Ferren Hillary Kalalo</h2>
+                        <td class="profile"><img src="circle-cropped.png" height="200px" alt="profil-picture"></td>
                         <h2>Student</h2>
                         <p>
                             Faculty of Computer Science Universitas Klabat, Airmadidi, Minahasa Utara, Indonesia, 95371<br>
                             Email : <i>S21910001@student.unklab.ac.id</i><br>
-                            Phone : +6282189225645
+                            Phone : +6282290659724
                         </p>
                     </td>
             </tr>
-        </table>
+        </div>
         <a href="#personal">    Personal Data..|</a>
         <a href="#education">   Education..|</a>
         <a href="#skills">Skills..|</a>
         <a href="#seminar">Seminar Certification..|</a>
         <a href="#contact"> Contact Me</a>
-    <hr>
+    </div>
+    <div style="margin-left: 40%;">
     <table>
-        <th><h2 id="personal"><u>Personal Data</u></h2></th>
+        <th><h2 class="title" id="personal">Personal Data</h2></th>
         <tr>
             <td>Birth of date</td>
             <td>: February 9 2002</td>
@@ -56,42 +61,43 @@
             <td>Status</td>
             <td>: Not married yet</td>
         </tr>
-    </table>
-    <hr>
+    </table> <br><br>
+    <!-- <hr> -->
     <table>
-        <th><h2 id="education" align="left"><u>Education</u></h2></th>   
+        <th><h2 class="title" id="education" align="left">Education</h2></th>   
         <tr>
             <td><ol>
-                <li>SD GMIM 2 Aertembaga</li><br>
-                <li>SMP Negeri 2 Bitung</li><br>
-                <li>SMA Negeri 2 Bitung</li>
+                <li>2007 - 2013<br>SD GMIM 2 Aertembaga</li><br>
+                <li>2013 - 2016<br>SMP Negeri 2 Bitung</li><br>
+                <li>2016 - 2019<br>SMA Negeri 2 Bitung</li>
             </ol></td>
         </tr>
-    </table>
-    <hr>
+    </table> <br><br>
+    <!-- <hr> -->
     <table>
-        <th><h2 id="skills" align="left"><u>Skills</u></h2></th> 
+        <th><h2 class="title" id="skills" align="left">Skills</h2></th> 
         <tr>
             <td><ul>
                 <li>Driving</li>
 
             </ul></td>
         </tr>
-    </table>
-    <hr>
+    </table> <br>
+    <!-- <hr> -->
+    <!-- <hr> -->
     <table>
-        <th><h2 id="seminar" align="left"><u>Seminar Certification</u></h2></th>
+        <th><h2 class="title" id="seminar" align="left">Seminar Certification</h2></th>
         <tr>
             <td><ul>
-                <li>Certificate of participant in the Computer Science faculty day with the themed "Break the Ice" on October 7th, 2019.</li>
-                <li>Certificate of participant in the Aptikom Sulut Webinar series #1 Game Development & Industry on June 25, 2020.</li>
+                <li>Certificate of participant in the Computer Science faculty day <br>with the themed "Break the Ice" on October 7th, 2019.</li><br>
+                <li>Certificate of participant in the Aptikom Sulut Webinar series #1<br> Game Development & Industry on June 25, 2020.</li>
 
             </ul></td>
         </tr>
-    </table>
-    <hr>
+    </table> <br><br>
+    <!-- <hr> -->
     <form action="/path">
-        <h2 id="contact"><u>Contact Me</u></h2>
+        <h2 class="title" id="contact">Contact Me</h2>
         <label for="name">Your Name :</label>
         <input type="text" name="name"><br><br>
         <label for="email">Your Email :</label>
@@ -100,6 +106,6 @@
         <textarea rows="15" cols="50" placeholder="please type your massage here ..."></textarea>
         <button>Send</button>
     </form>
-
+</div>
 </body>
 </html>
