@@ -12,8 +12,37 @@ body{
     font-weight: 900;
     letter-spacing: 1.5px;
     word-spacing: 2px;
-    position: relative;
+    transition: background 0.1s linear;
 }
+.checkbox{
+    opacity: 0%;
+    position: absolute;
+}
+.label{
+    background-color:white;
+    display: flex;
+    border-radius: 20px;
+    position: center;
+    height: 30px;
+    margin-left: 6em;
+    width: 70px;
+}
+.ball{
+    background-color: #faa1a1;
+    border-radius: 50%;
+    position: relative;
+    top: 3px;
+    left: 11px;
+    height: 25px;
+    width: 25px;
+    transition: transform 0.2s linear;
+} 
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+    background-color:#86e9e4 ;
+}
+
 h2.title{
     color : white ;
     font-family: 'Boogaloo', cursive;
@@ -24,6 +53,27 @@ h2.title{
     background-color: #ffb6b6;
     text-shadow: 1px 1px rgb(0, 0, 0);
 }
+
+.blueMode{
+    background-color:#beebe9;
+    color:#539e9a;
+}
+
+.blueMode .sidebar{
+    background-color:#81e0dc;
+    color: #ffffff;
+}
+
+.blueMode .title{
+    /* background-color: #8ad7c1; */
+    background-color:#81e0dc;
+    color: #ffffff;
+}
+
+.blueMode a:hover{
+    background-color: white;
+}
+
 
 div.sidebar{
     background-color: #ffb6b6;
@@ -48,6 +98,11 @@ a:hover{
     }
     body{
         font-size: 1rem;
+    }
+    .label{
+        height: 35px;
+        margin-left: 2.5em;
+        width: 70px;
     }
 }
 @media screen and (max-width : 900px)

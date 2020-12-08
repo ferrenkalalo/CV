@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Ferren Hillary Kalalo</title>
     <link rel = "stylesheet" href="style.css"/>
-    <link href="font-awesome/css/all.css" rel="stylesheet"/>
+    <!-- <link href="font-awesome/css/all.css" rel="stylesheet"/> -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Boogaloo&family=Playfair+Display:wght@600&family=Sigmar+One&family=Slabo+27px&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="sidebar" style="width:22%">
+<body id="all" width="700px" height="800px">
+
+    <div class="sidebar" id="sidebar" style="width:22%">
         <div>
             <tr>
                         <td>
                         <h2>Ferren Hillary Kalalo</h2>
-                        <td class="profile"><img src="circle-cropped.png" height="200px" alt="profil-picture"></td>
-                        <h2>Student</h2>
+                        <td class="profile"><img src="circle-cropped.png" height="185px" alt="profil-picture"></td>
+                        <h3>Student</h3>
                         <p>
                             Faculty of Computer Science Universitas Klabat, Airmadidi, Minahasa Utara, Indonesia, 95371<br>
                             Email : <i>S21910001@student.unklab.ac.id</i><br>
@@ -29,6 +30,12 @@
         <a href="#skills">Skills..|</a>
         <a href="#seminar">Seminar Certification..|</a>
         <a href="#contact"> Contact Me</a>
+        <div>
+        <br><input type="checkbox" class="checkbox" id="checkbox" onclick="myFunction()">
+        <label for="checkbox" class ="label">
+            <div class="ball"></div>
+        </label>
+    </div>
     </div>
     <div style="margin-left: 40%;">
     <table>
@@ -102,10 +109,11 @@
         <input type="text" name="name"><br><br>
         <label for="email">Your Email :</label>
         <input type="email" name="email"><br>
-        <p>Your Massage :</p>
-        <textarea rows="15" cols="50" placeholder="please type your massage here ..."></textarea>
-        <button>Send</button>
+        <p>Your Message :</p>
+        <textarea rows="15" cols="50" placeholder="please type your message here ..."></textarea>
     </form>
+    <button id="myButton">Send</button>
 </div>
+<script src="index.js"></script>
 </body>
 </html>
